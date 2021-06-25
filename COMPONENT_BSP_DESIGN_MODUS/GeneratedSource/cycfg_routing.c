@@ -4,7 +4,7 @@
 * Description:
 * Establishes all necessary connections between hardware elements.
 * This file was automatically generated and should not be modified.
-* Tools Package 2.2.0.2801
+* Tools Package 2.2.0.2790
 * latest-v2.X 2.0.0.6211
 * personalities 3.0.0.0
 * udd 3.0.0.562
@@ -33,6 +33,10 @@
 void init_cycfg_routing(void)
 {
 	HSIOM->AMUX_SPLIT_CTL[2] = HSIOM_V2_AMUX_SPLIT_CTL_SWITCH_AA_SL_Msk |
+		HSIOM_V2_AMUX_SPLIT_CTL_SWITCH_AA_SR_Msk |
+		HSIOM_V2_AMUX_SPLIT_CTL_SWITCH_BB_SL_Msk |
+		HSIOM_V2_AMUX_SPLIT_CTL_SWITCH_BB_SR_Msk;
+	HSIOM->AMUX_SPLIT_CTL[3] = HSIOM_V2_AMUX_SPLIT_CTL_SWITCH_AA_SL_Msk |
 		HSIOM_V2_AMUX_SPLIT_CTL_SWITCH_AA_SR_Msk |
 		HSIOM_V2_AMUX_SPLIT_CTL_SWITCH_BB_SL_Msk |
 		HSIOM_V2_AMUX_SPLIT_CTL_SWITCH_BB_SR_Msk;

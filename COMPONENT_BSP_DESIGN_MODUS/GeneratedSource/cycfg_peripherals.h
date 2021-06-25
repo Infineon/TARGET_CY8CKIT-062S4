@@ -4,7 +4,7 @@
 * Description:
 * Peripheral Hardware Block configuration
 * This file was automatically generated and should not be modified.
-* Tools Package 2.2.0.2801
+* Tools Package 2.2.0.2790
 * latest-v2.X 2.0.0.6211
 * personalities 3.0.0.0
 * udd 3.0.0.562
@@ -46,18 +46,20 @@ extern "C" {
 #define CY_CAPSENSE_PERI_DIV_INDEX 0u
 #define Cmod_PORT GPIO_PRT7
 #define Button0_Sns0_PORT GPIO_PRT7
-#define LinearSlider0_Sns0_PORT GPIO_PRT7
-#define LinearSlider0_Sns1_PORT GPIO_PRT7
-#define LinearSlider0_Sns2_PORT GPIO_PRT7
-#define LinearSlider0_Sns3_PORT GPIO_PRT8
-#define LinearSlider0_Sns4_PORT GPIO_PRT8
+#define Button1_Sns0_PORT GPIO_PRT7
+#define LinearSlider0_Sns0_PORT GPIO_PRT9
+#define LinearSlider0_Sns1_PORT GPIO_PRT8
+#define LinearSlider0_Sns2_PORT GPIO_PRT8
+#define LinearSlider0_Sns3_PORT GPIO_PRT7
+#define LinearSlider0_Sns4_PORT GPIO_PRT7
 #define Cmod_PIN 7u
 #define Button0_Sns0_PIN 0u
-#define LinearSlider0_Sns0_PIN 1u
-#define LinearSlider0_Sns1_PIN 2u
-#define LinearSlider0_Sns2_PIN 3u
-#define LinearSlider0_Sns3_PIN 0u
-#define LinearSlider0_Sns4_PIN 1u
+#define Button1_Sns0_PIN 1u
+#define LinearSlider0_Sns0_PIN 3u
+#define LinearSlider0_Sns1_PIN 1u
+#define LinearSlider0_Sns2_PIN 0u
+#define LinearSlider0_Sns3_PIN 3u
+#define LinearSlider0_Sns4_PIN 2u
 #define Cmod_PORT_NUM 7u
 #define CYBSP_CSD_HW CSD0
 #define CYBSP_CSD_IRQ csd_interrupt_IRQn
