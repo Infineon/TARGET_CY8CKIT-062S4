@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Design version="12" xmlns="http://cypress.com/xsd/cydesignfile_v3">
-    <ToolInfo version="2.4.0.5721"/>
+    <ToolInfo version="2.4.0.5972"/>
     <Devices>
         <Device mpn="CY8C6244LQI-S4D92">
             <BlockConfig>
@@ -237,10 +237,6 @@
                         <Param id="initialState" value="1"/>
                         <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
                         <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="sioInputBuffer" value="false"/>
-                        <Param id="sioTrip" value="CY_SIO_VTRIP_CMOS"/>
-                        <Param id="sioRef" value="CY_SIO_VREF_PINREF"/>
-                        <Param id="sioVoltage" value="CY_SIO_VOH_1_00"/>
                         <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
                         <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
                         <Param id="sioOutputBuffer" value="true"/>
@@ -283,10 +279,6 @@
                         <Param id="initialState" value="1"/>
                         <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
                         <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="sioInputBuffer" value="false"/>
-                        <Param id="sioTrip" value="CY_SIO_VTRIP_CMOS"/>
-                        <Param id="sioRef" value="CY_SIO_VREF_PINREF"/>
-                        <Param id="sioVoltage" value="CY_SIO_VOH_1_00"/>
                         <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
                         <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
                         <Param id="sioOutputBuffer" value="true"/>
@@ -314,10 +306,6 @@
                         <Param id="initialState" value="1"/>
                         <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
                         <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="sioInputBuffer" value="false"/>
-                        <Param id="sioTrip" value="CY_SIO_VTRIP_CMOS"/>
-                        <Param id="sioRef" value="CY_SIO_VREF_PINREF"/>
-                        <Param id="sioVoltage" value="CY_SIO_VOH_1_00"/>
                         <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
                         <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
                         <Param id="sioOutputBuffer" value="true"/>
@@ -360,10 +348,6 @@
                         <Param id="initialState" value="1"/>
                         <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
                         <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="sioInputBuffer" value="false"/>
-                        <Param id="sioTrip" value="CY_SIO_VTRIP_CMOS"/>
-                        <Param id="sioRef" value="CY_SIO_VREF_PINREF"/>
-                        <Param id="sioVoltage" value="CY_SIO_VOH_1_00"/>
                         <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
                         <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
                         <Param id="sioOutputBuffer" value="true"/>
@@ -385,6 +369,7 @@
                 <Block location="srss[0].clock[0].altsystickclk[0]">
                     <Personality template="mxs40altsystick" version="1.0">
                         <Param id="sourceClock" value="lfclk"/>
+                        <Param id="interval" value="0"/>
                     </Personality>
                 </Block>
                 <Block location="srss[0].clock[0].bakclk[0]">
@@ -486,8 +471,8 @@
                 <Block location="srss[0].power[0]">
                     <Personality template="mxs40power" version="1.3">
                         <Param id="pwrMode" value="LDO_1_1"/>
-                        <Param id="actPwrMode" value=""/>
-                        <Param id="coreRegulator" value=""/>
+                        <Param id="actPwrMode" value="LP"/>
+                        <Param id="coreRegulator" value="CY_SYSPM_LDO_MODE_NORMAL"/>
                         <Param id="pmicEnable" value="false"/>
                         <Param id="backupSrc" value="VDDD"/>
                         <Param id="idlePwrMode" value="CY_CFG_PWR_MODE_DEEPSLEEP"/>
