@@ -51,5 +51,5 @@ DEVICE_CY8C6244LQI-S4D92_DIE:=PSoC6A256K
 DEVICE_CY8C6244LQI-S4D92_FLASH_KB:=256
 DEVICE_CY8C6244LQI-S4D92_SRAM_KB:=128
 DEVICE_LIST:=CY8C6244LQI-S4D92
-DEVICE_TOOL_IDS:=bsp-assistant capsense-configurator capsense-tuner device-configurator dfuh-tool library-manager lin-configurator ml-configurator project-creator qspi-configurator seglcd-configurator smartio-configurator usbdev-configurator
+DEVICE_TOOL_IDS:=bsp-assistant capsense-configurator capsense-tuner device-configurator dfuh-tool library-manager lin-configurator memory-analyzer ml-configurator project-creator qspi-configurator seglcd-configurator smartio-configurator usbdev-configurator
 RECIPE_DIR:=$(SEARCH_recipe-make-cat1a)
